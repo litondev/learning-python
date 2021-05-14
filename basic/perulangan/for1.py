@@ -1,6 +1,4 @@
-amount = 10;
-
-for item in amount:
+for item in range(0,5):
 	print(item)
 else:
 	print('else')

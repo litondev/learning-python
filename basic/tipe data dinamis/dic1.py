@@ -10,3 +10,5 @@ del my_dic["name"]
 print(my_dic)
 
 my_dic["name"] = "litoninot"
+
+print(my_dic)

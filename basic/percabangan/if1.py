@@ -8,3 +8,5 @@ else:
 	print("C")
 
 saya = "bocah" if value < 10 else "dewasa"
+
+print(saya)
