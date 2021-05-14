@@ -1,10 +1,6 @@
 try:
 	text = input('Input Some : ')
-except EOFError:
-	print('why you do EOF on me')
-except KeyboardInterrupt:
-	print('keyboard interrupt')
-except ValueError as err:
-	print('terjadi Kesalahan')
+except:
+	print('Terjadi Kesalahan')
 else:
-	print('Oke')
+	print('Seperti Finally')

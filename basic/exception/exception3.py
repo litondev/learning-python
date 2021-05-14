@@ -1,7 +1,6 @@
 try:
-	print('Masukan')
-	raise ValueError('masukan salah')
+	print('Masukan Data')
+	raise ValueError('Masukan Data Anda Salah')
+	print('Lolos')
 except ValueError as err:
 	print(err)
-finally:
-	print('Final')

@@ -1,6 +1,7 @@
 try:
-	with open('text.text') as f:
+	with open('file.txt') as f:
 		print(f.readlines())
+		# print(f.readdd()) -- akan error
 except:
 	print('Terjadi Kesalahan')
 finally:

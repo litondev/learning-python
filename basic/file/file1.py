@@ -2,7 +2,8 @@ file = open('file.txt','w')
 file.write('Hai')
 file.close()
 
-file = open('file.text')
+file = open('file.txt')
+
 while True:
 	line = file.readline()
 
@@ -10,4 +11,5 @@ while True:
 		break
 
 	print(line,end=' ')
+
 file.close()

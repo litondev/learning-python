@@ -9,19 +9,22 @@ class Player:
 	def getSpeed():
 		return self.speed
 
-# PalyerInfo(Player,PlayerA)
+# PalyerIndo(Player,PlayerA)
 class PlayerIndo(Player):
 	# oppsional/override
 	# def __init__(self,name,speed,no):
 		# super().__init__(name,speed)
+		# or
 		# Player.__ini__(self,name,speed)
 		# self.no = no
 
-	def setAge(self,age):
-		self.age = age
-		return self.age
+	def setWeton(self,weton):
+		self.weton = weton
+		return self.weton
 
 	def getName(self):
 		return self.name
 		
 players = PlayerIndo('name',10)
+
+print(players.getName())

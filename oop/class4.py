@@ -1,39 +1,56 @@
 class Robot:
 	population = 0
 
-	def setPopulation():
+	def setPopulation(self):
+		# set static
 		Robot.population += 1
 
 	def __del__(self):
 		print('Am Daying')
 
+	# stati method
 	def myStaticMethod():
 		print("Am Static")
 
 	howMany = staticmethod(myStaticMethod)
 
-	# @staticmethod 
-	# def hoMany():
-	# 	print('Hai')
+	# also static method
+	@staticmethod 
+	def getPopulation():
+		print(Robot.population)
 
-	# @info_player.setter
-	# def info_play(self,data):
-	#	name,age = data.split(' ')
-	#	self.name = name
-	# 	self.age = age
-	# calls => robot_instance.info_player = "hello 50"
+	# class method
+	@classmethod
+	def getPopulationClass(cls):
+		print(cls.population)
 
-	# @property
-	#def info_player(self):
-	#	return self.name
-	# calls => robot_instance.info_palyer
+	@property
+	def player(self):
 
-	# @classmethod
-	# def generate_info(self):
-	#	return cls.job 
-	# calls => robot_class.generate_info()
+		self.name = "my name"
+		self.age = 50
 
-r = Robot()
-r.setPopulation()
+		print(f"Name : {self.name} Age : {self.age}")
+
+	@player.setter
+	def player(self,data):
+		name,age = data.split(' ')
+
+		self.name = name
+		self.age = age
+		
+iRobot = Robot()
+
+iRobot.setPopulation()
+
 Robot.howMany()
-del r
+
+Robot.getPopulation()
+
+Robot.getPopulationClass()
+
+iRobot.player = "hello 50"
+
+iRobot.player
+
+del iRobot
