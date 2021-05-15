@@ -9,3 +9,7 @@
 	<ul>
 		<li>pip freeze > requirements.txt</li>
 	</ul>
+<b> Install Requiremnts : </b>
+	<ul>
+		<li>pip install -r requirements.txt </li>
+	</ul>
